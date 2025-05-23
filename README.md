@@ -12,8 +12,8 @@ Usage:
 
     <UserName>:      The Name licensed to
     <Version>:       The Version of MobaXterm
-    <Count>:         Number of authorization
                      Example:    10.9
+    <Count>:         Number of authorization
 ```
 
 EXAMPLE:
