@@ -8,10 +8,11 @@ Please see source code. It is not complex.
 
 ```
 Usage:
-    MobaXterm-Keygen.py <UserName> <Version>
+    MobaXterm-Keygen.py <UserName> <Version> <Count>
 
     <UserName>:      The Name licensed to
     <Version>:       The Version of MobaXterm
+    <Count>:         Number of authorization
                      Example:    10.9
 ```
 

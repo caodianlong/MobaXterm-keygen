@@ -98,10 +98,11 @@ def GenerateLicense(Type : LicenseType, Count : int, UserName : str, MajorVersio
 
 def help():
     print('Usage:')
-    print('    MobaXterm-Keygen.py <UserName> <Version>')
+    print('    MobaXterm-Keygen.py <UserName> <Version> <Count>')
     print()
     print('    <UserName>:      The Name licensed to')
     print('    <Version>:       The Version of MobaXterm')
+    print('    <Count>:         Number of authorizations')
     print('                     Example:    10.9')
     print()
 
@@ -114,7 +115,7 @@ if __name__ == '__main__':
         MajorVersion = int(MajorVersion)
         MinorVersion = int(MinorVersion)
         GenerateLicense(LicenseType.Professional, 
-                        1,
+                        sys.argv[3],
                         sys.argv[1], 
                         MajorVersion, 
                         MinorVersion)
