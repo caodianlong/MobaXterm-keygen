@@ -1,5 +1,9 @@
 # MobaXterm Keygen
 
+## What's different?
+
+You can specify the number of authorizations.
+
 ## How it work?
 
 Please see source code. It is not complex.
