@@ -10,6 +10,15 @@ Please see source code. It is not complex.
 
 ## How to use?
 
+Confirm python3 is installed in your machine.
+
+Then add executable permissions to MobaXterm-Keygen.py
+
+```
+chmod +x MobaXterm-Keygen.py
+```
+
+Then launch.
 ```
 Usage:
     MobaXterm-Keygen.py <UserName> <Version> <Count>

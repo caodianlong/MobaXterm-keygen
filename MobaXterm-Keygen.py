@@ -1,4 +1,4 @@
-#/usr/bin/env python3
+#!/usr/bin/python3
 '''
 Author: Double Sine
 License: GPLv3
@@ -107,17 +107,20 @@ def help():
     print()
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         help()
         exit(0)
     else:
+        UserName = sys.argv[1]
         MajorVersion, MinorVersion = sys.argv[2].split('.')[0:2]
         MajorVersion = int(MajorVersion)
         MinorVersion = int(MinorVersion)
-        GenerateLicense(LicenseType.Professional, 
-                        sys.argv[3],
-                        sys.argv[1], 
-                        MajorVersion, 
+        Count = int(sys.argv[3])
+        print('Major=',MajorVersion,'Minor=',MinorVersion,'count=', sys.argv[3])
+        GenerateLicense(LicenseType.Professional,
+                        Count,
+                        UserName,
+                        MajorVersion,
                         MinorVersion)
         print('[*] Success!')
         print('[*] File generated: %s' % os.path.join(os.getcwd(), 'Custom.mxtpro'))
